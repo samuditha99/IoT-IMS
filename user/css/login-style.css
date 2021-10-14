@@ -1,0 +1,147 @@
+:root {
+    font-size: 100%;
+    font-size: 16px;
+    line-height: 1.5;
+    --primary-blue: #233975;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-weight: 700;
+    color: #261A4D!important;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 45px;
+    position: absolute;
+}
+.a{
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 45px;
+    position: absolute;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.3rem;
+}
+.left .copy h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: -20px;
+}
+.right .copy h3{
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 2.7rem;
+}
+.split-screen{
+    display: flex;
+    flex-direction: column;
+}
+.left{
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+}
+.left .copy{
+    width: 600px;
+}
+.left .copy img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+     width: 60%;
+}
+.left, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    background-color: #261A4D;
+    color: white;
+}
+.left p{
+    font-weight: 400;
+    text-align: center;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.right .copy h3{
+    margin: 1.5rem 0;
+    line-height: 2.1rem;
+}
+.right form{
+    width: 400px;
+}
+form input[type="text"], form input[type="password"]{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid #c4c4c4;
+    padding: 0.4em;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+}
+.right label{
+    display: block;
+    margin-bottom: 0.1rem;
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+.input-container.password{
+    position: relative;
+}
+.input-container.password i {
+    position: absolute;
+    color: #261A4D;
+    font-weight: 900;
+    font-size: 1.1rem;
+    top : 32px;
+    right : 16px;
+    cursor: pointer;
+}
+.login-btn{
+    display: block;
+    width: 100%;
+    background: #3F2E77;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+}
+.login-btn:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 900px){
+    .split-screen{
+        flex-direction: row;
+        height: 100vh;
+    }
+    .left, .right{
+        display: flex;
+        width: 60%;
+        height: 100%;
+    }
+    .right{
+        display: flex;
+        width: 40%;
+        height: 100%;
+    }
+}
+
+
